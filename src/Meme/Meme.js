@@ -26,8 +26,7 @@ export const Meme = () => {
     const generateMeme = () => {
         const currentMeme = memes[index];
         const formData = new FormData();
-        console.log(process.env.USERNAME);
-        console.log(process.env.PASSWORD);
+
         formData.append("username", process.env.USERNAME);
         formData.append("password", process.env.PASSWORD);
         formData.append("template_id", currentMeme.id);
