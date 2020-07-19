@@ -38,7 +38,7 @@ export const Meme = () => {
         }).then(res => {
             return res.json();
         }).then(res => {
-            // console.log(res);
+            console.log(res);
             history.push(`/generated?url=${res.data.url}`);
         })
     }
